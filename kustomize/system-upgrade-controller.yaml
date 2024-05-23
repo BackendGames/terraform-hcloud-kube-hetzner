@@ -4,6 +4,9 @@ metadata:
   name: system-upgrade-controller
   namespace: system-upgrade
 spec:
+  selector:
+    matchLabels:
+      app: system-upgrade-controller
   template:
     spec:
       containers:
