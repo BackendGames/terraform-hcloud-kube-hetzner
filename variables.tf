@@ -2,6 +2,7 @@ variable "hcloud_token" {
   description = "Hetzner Cloud API Token."
   type        = string
   sensitive   = true
+  default = ""
 }
 
 variable "k3s_token" {
@@ -37,12 +38,14 @@ variable "ssh_port" {
 variable "ssh_public_key" {
   description = "SSH public Key."
   type        = string
+  default = ""
 }
 
 variable "ssh_private_key" {
   description = "SSH private Key."
   type        = string
   sensitive   = true
+  default = ""
 }
 
 variable "ssh_hcloud_key_label" {
